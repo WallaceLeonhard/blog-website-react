@@ -16,10 +16,12 @@ function Login({ setIsAuth }) {
   return (
     <div className="center-div">
       <div className="loginPage">
-        <p>Sign in with Google to Continue</p>
-        <button className="google-btn" onClick={signInWithGoogle}>
-          Sign in with Google
-        </button>
+        <div className="loginContainer">
+          <p>Sign in with Google to Continue</p>
+          <button className="google-btn" onClick={signInWithGoogle}>
+            Sign in with Google
+          </button>
+        </div>
       </div>
     </div>
   );
