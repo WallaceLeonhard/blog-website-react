@@ -22,6 +22,29 @@ nav {
   text-decoration: none;
 }
 
+nav button {
+  background-color: #0a4b75;
+  border: none;
+  color: #8ca315;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: underline #fb6f24;
+  transition: all 0.3s;
+}
+
+nav button:hover {
+  color: #fb6f24;
+  text-decoration: underline #8ca315;
+}
+
+.nav-btn {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 a {
   color: #8ca315;
   text-decoration: underline #fb6f24;
@@ -185,4 +208,60 @@ textarea {
   background-color: #ebebeb;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
   cursor: not-allowed;
+}
+
+.homePage {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #0a4b75;
+}
+
+.homePage .post {
+  width: 600px;
+  height: auto;
+  max-height: 600px;
+  background-color: #5191c1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.post .postHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.postHeader .title {
+  flex: 50%;
+}
+.postHeader .deletePost {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.deletePost button {
+  border: none;
+  color: #fb6f24;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.post .postTextContainer {
+  word-wrap: break-word;
+  height: auto;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
 }

@@ -4,7 +4,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
 
-function CreatePost({ isAuth }) {
+function createPost({ isAuth }) {
   const [title, setTitle] = useState("");
   const [postText, setPostText] = useState("");
 
@@ -53,4 +53,4 @@ function CreatePost({ isAuth }) {
   );
 }
 
-export default CreatePost;
+export default createPost;
